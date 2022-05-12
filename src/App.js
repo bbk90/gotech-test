@@ -19,7 +19,7 @@ const App = () => {
 
     const fetchQuestions = async () => {
         try {
-            const res = await axios.get('http://locahost:3001/questionnaires/12345');
+            const res = await axios.get('http://localhost:3001/questionnaires/12345');
             setQuestions(res.data.questions);
             setLoading(false);
         } catch (e) {

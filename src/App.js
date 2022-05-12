@@ -1,4 +1,4 @@
-import {Box, CircularProgress, Container, CssBaseline, Typography} from "@mui/material";
+import {Box, CircularProgress, Typography} from "@mui/material";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import Header from "./components/Header/Header";
@@ -19,7 +19,7 @@ const App = () => {
 
     const fetchQuestions = async () => {
         try {
-            const res = await axios.get('http://localhost:3001/questionnaires/12345');
+            const res = await axios.get('http://locahost:3001/questionnaires/12345');
             setQuestions(res.data.questions);
             setLoading(false);
         } catch (e) {

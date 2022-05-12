@@ -1,0 +1,11 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(242, 216, 248);
+    margin: 0 auto;
+    max-width: 540px;
+    padding: 20px;
+}
